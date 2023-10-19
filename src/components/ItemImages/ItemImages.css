@@ -1,0 +1,22 @@
+.item-images {
+  width: 593px;
+  height: 609px;
+  display: grid;
+  grid-template-columns: 185px 185px 185px;
+  grid-template-rows: 472px 118px;
+  gap: 19px;
+}
+
+.img-box {
+  border-radius: 10px;
+}
+
+.first-img {
+  grid-column: 1/4;
+}
+
+@media (max-width: 600px) {
+  .item-images {
+    display: none;
+  }
+}

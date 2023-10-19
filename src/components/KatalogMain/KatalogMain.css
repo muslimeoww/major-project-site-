@@ -1,0 +1,272 @@
+.katalog-main {
+  margin-top: 167px;
+  width: 100%;
+  max-width: 1202px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  margin-bottom: 268px;
+}
+
+.katalog-main h1 {
+  margin-bottom: 80px;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.katalog-content {
+  width: 100%;
+  display: flex;
+}
+
+.katalog-filter {
+  width: 21%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.katalog-list {
+  width: 79%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 100px;
+}
+
+.filter-list {
+  width: 162px;
+  min-height: 192px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.411);
+
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.filter-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-type span {
+  margin: 0;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.mobile-filter_button {
+  display: none;
+
+  margin-bottom: 49px;
+}
+
+.mobile-filter_button button {
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.plumg-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: plumbfilter 0.2s;
+  height: 103px;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.brend-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: brendfilter 0.2s;
+  height: 47px;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.type-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: typefilter 0.2s;
+  height: 47px;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: pricefilter 0.2s;
+  height: 58px;
+
+  color: #2c3035;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+@keyframes plumbfilter {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 103px;
+  }
+}
+
+@keyframes brendfilter {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 47px;
+  }
+}
+
+@keyframes typefilter {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 47px;
+  }
+}
+
+@keyframes pricefilter {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 58px;
+  }
+}
+
+.price-range {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background-color: #afbcd1 !important;
+  /* height: 100%; */
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .katalog-main {
+    margin-top: 50px;
+    padding: 0px 20px;
+  }
+
+  .katalog-content {
+    flex-direction: column;
+  }
+
+  .katalog-main h1 {
+    margin-bottom: 27px;
+    font-size: 15px;
+  }
+
+  .mobile-filter_button {
+    display: block;
+  }
+
+  .katalog-filter {
+    display: none;
+  }
+
+  .katalog-filter-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .filter-list {
+    width: 100%;
+  }
+
+  .filter-list svg {
+    align-self: end;
+  }
+
+  .filter-type ul {
+    width: 80%;
+    align-self: center;
+  }
+
+  .katalog-list {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    row-gap: 50px;
+  }
+}
